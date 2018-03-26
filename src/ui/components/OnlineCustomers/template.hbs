@@ -1,0 +1,8 @@
+<div class="online-customers">
+  {{#if (eq status "fetching")}}
+    <div class="status">Updating...</div>
+  {{/if}}
+  {{#if (eq status "success")}}
+    <div class="number">Online customers: {{customers}}</div>
+  {{/if}}
+</div>
